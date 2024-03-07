@@ -1,4 +1,5 @@
 <?php
+include "header.php";
 require_once 'conexion.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -12,8 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $resultadoVerificar = mysqli_query($conexion, $sqlVerificar);
 
     if ($resultadoVerificar && mysqli_num_rows($resultadoVerificar) > 0) {
-        echo "Ya existe un usuario con este correo. Por favor, elige otro correo.<br>";
-        echo "<a href='formRegistro.php'>Volver a intentarlo</a>";
+        echo "<br><br><div class='text-center'>Ya existe un usuario con este correo. Por favor, elige otro correo.<br></div>";
+        
+        echo "<br><div class='text-center'><a href='formRegistro.php' class='btn btn-primary'>Volver</a></div><br><br><br><br>";
     } else {
         // Insertar nuevo usuario en la base de datos
         $sqlInsertar = "INSERT INTO usuarios (nombre, email, contra, perfil) VALUES ('$nombre', '$email', '$contra', 'usuario')";
@@ -25,10 +27,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         } else {
             echo "Error al registrar el usuario. Por favor, inténtalo de nuevo.";
-           echo "<a href='formRegistro.php'>Volver a intentarlo</a>";
+            echo "<a href='formRegistro.php' class='btn btn-primary'>Volver a intentarlo</a>";
         }
     }
 }
+?>
+<?php
+include "footer.php";
 ?>
 
 

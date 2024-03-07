@@ -56,6 +56,7 @@ include "header.php";
             </div>
         </div>
     </div>
+    
     <a class="btn btn-primary mt-4" style="display: block; margin: 0 auto; width:12%;" href="cerrarSesion.php">Cerrar Sesión</a>
     
 </div>
