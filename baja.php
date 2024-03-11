@@ -19,7 +19,7 @@ include "header.php";
                 <div class="col-md-10">
                     <div class="card">
                         <div class="card-header">
-                            Productos:
+                            Libros:
                         </div>
                         <!-- MULTIPART/FORMDATA para incluir ficheros -->
                         <?php
