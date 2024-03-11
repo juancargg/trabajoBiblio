@@ -26,7 +26,7 @@
         }
     } else {
         echo "<br><br><div class='text-center'>Credenciales incorrectas. Inténtalo de nuevo.<br></div>";
-        echo "<br><div class='text-center'><a href='formInicio.php'  class='btn btn-primary'>Volver a intentarlo</a></div><br><br><br>";
+        echo "<br><div class='text-center'><a href='formInicio.php' class='btn btn-primary'>Volver a intentarlo</a></div><br><br><br>";
     }
 
     mysqli_close($conexion);
