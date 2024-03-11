@@ -22,12 +22,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $resultadoInsertar = mysqli_query($conexion, $sqlInsertar);
 
         if ($resultadoInsertar) {
-            echo "Registro exitoso. Ahora puedes iniciar sesión.";
-            echo "<a href='formInicio.php'>Hacer el login</a>";
+            echo "<br><br><div class='text-center'>Registro exitoso. Ahora puedes iniciar sesión.<br></div>";
+            echo "<br><div class='text-center'><a href='formInicio.php' class='btn btn-primary'>Ir al login</a></div><br><br><br><br>";
 
         } else {
             echo "Error al registrar el usuario. Por favor, inténtalo de nuevo.";
-            echo "<a href='formRegistro.php' class='btn btn-primary'>Volver a intentarlo</a>";
+            echo "<br><div class='text-center'><a href='formRegistro.php' class='btn btn-primary'>Volver a  intentarlo</a></div><br><br><br><br>";
         }
     }
 }

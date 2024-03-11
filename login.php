@@ -1,4 +1,5 @@
 <?php
+    include "header.php";
     require_once 'conexion.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -24,11 +25,14 @@
             exit();
         }
     } else {
-        echo "Credenciales incorrectas. Inténtalo de nuevo.<br>";
-        echo "<a href='formInicio.php'>Volver a intentarlo</a>";
+        echo "<br><br><div class='text-center'>Credenciales incorrectas. Inténtalo de nuevo.<br></div>";
+        echo "<br><div class='text-center'><a href='formInicio.php'  class='btn btn-primary'>Volver a intentarlo</a></div><br><br><br>";
     }
 
     mysqli_close($conexion);
 }
 
+include "footer.php";
+
 ?>
+	

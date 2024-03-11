@@ -10,6 +10,7 @@
 </head>
 
 <body>
+	<input type="button" value="boton" class="btn btn-primary">
 	<div class="text-center pt-2 pb-5 mb-5">
     <h2 class="mt-3" >Datos sobre cookies</h2>
 	<img src="imagenes/cookies.png" alt="">
