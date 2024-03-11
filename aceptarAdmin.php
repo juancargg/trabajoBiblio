@@ -30,7 +30,7 @@
 	<!-- <a href="home.php"><i class="bi-arrow-return-left px-3" style="font-size:4rem; color:black;"></i></a> -->
 	
 	<a href="home.php"><input type="button" class="btn btn-primary" value="Ir a Biblioteca"/></a>&nbsp;&nbsp;
-   <a href="http://localhost/phpmyadmin/index.php?route=/database/structure&db=productosbd"><input type="button" class="btn btn-primary" value="phpMyAdmin"/></a>&nbsp;&nbsp;
+   <a href="http://localhost/phpmyadmin/index.php?route=/database/structure&db=productosbd" target="blank"><input type="button" class="btn btn-primary" value="phpMyAdmin"/></a>&nbsp;&nbsp;
     <a href="cerrarSesion.php"><input type="button" class="btn btn-primary" value="Cerrar sesion"/></a>&nbsp;&nbsp;
 
 </div>
