@@ -1,6 +1,6 @@
      <!-- Archivo 4 en orden de creacion -->
     </main>
-    <footer class="container-fluid bg-dark text-light text-center py-2">
+    <footer class="container-fluid bg-dark text-light text-center py-2 fixed-bottom">
         <!-- Sistema de capas de Bootstrap -->
         <div class="row">
             <div class="py-3">

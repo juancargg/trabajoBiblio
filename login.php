@@ -6,6 +6,7 @@
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $contra = $_POST['contra'];
+    
 
     $sql = "SELECT * FROM usuarios WHERE email = '$email' AND contra = '$contra'";
     $resultado = mysqli_query($conexion, $sql);

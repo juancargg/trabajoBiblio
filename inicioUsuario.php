@@ -39,7 +39,7 @@ if (!isset($_SESSION['email']) || $_SESSION['email'] == "") {
     </style>
 </head>
 <body>
-    <h1>Bienvenido <?php echo $_SESSION['nombre']; ?>(Usuario)</h1>
+    <h1>Bienvenido <?php echo $_SESSION['nombre']; ?> (Usuario)</h1>
     <h2> Debes aceptar las cookies para seguir navegando </h2>
     <a href="aceptar.php?aceptar=1"> Aceptar </a>
     <a href="cerrarSesion.php">Cerrar Sesión</a>

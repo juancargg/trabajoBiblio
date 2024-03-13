@@ -85,6 +85,13 @@
 
         <label for="contra">Contraseña</label><br>
         <input type="password" name="contra" id="contra"><br>
+        
+        <label for="perfil">Perfil</label><br>
+    <select name="perfil" id="perfil">
+    <option value="usuario">Usuario</option>
+    <option value="admin">Administrador</option>
+    </select><br>
+
 
         <button type="submit" name="registrarse" id="registrarse">Regístrate</button>
         <br>

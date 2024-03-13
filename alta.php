@@ -38,7 +38,7 @@ include "header.php";
                             </div>
                             <div class="mb-3">
                                 <label for="imagen" class="form-label">Imagen</label>
-                                <input type="file" class="form-control" name="imagen" id="imagen" accept="image/*" required />
+                                <input type="file" class="form-control" name="imagen" id="imagen" accept="image/*"  />
                             </div>
                             <div class="d-grid">
                                 <input type="submit" class="btn btn-primary" value="Dar de alta">

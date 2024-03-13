@@ -7,6 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $contra = $_POST['contra'];
+    $perfil = $_POST['perfil'];
+
 
     // Validar que el correo no exista en la base de datos
     $sqlVerificar = "SELECT * FROM usuarios WHERE email = '$email'";
@@ -18,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<br><div class='text-center'><a href='formRegistro.php' class='btn btn-primary'>Volver</a></div><br><br><br><br>";
     } else {
         // Insertar nuevo usuario en la base de datos
-        $sqlInsertar = "INSERT INTO usuarios (nombre, email, contra, perfil) VALUES ('$nombre', '$email', '$contra', 'usuario')";
+        $sqlInsertar = "INSERT INTO usuarios (nombre, email, contra, perfil) VALUES ('$nombre', '$email', '$contra', '$perfil')";
         $resultadoInsertar = mysqli_query($conexion, $sqlInsertar);
 
         if ($resultadoInsertar) {
